@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<title>Wynik</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+if (window != top)
+ top.location.href=location.href
+document.write("<h1>Dziękujemy za wysłanie formularza</h1><h2>Wprowadziłeś następujące dane:</h2>");
+
+var formData = encodeURIComponent(location.search);
+formData = formData.substring(3, formData.length);
+formData = unescape(formData);
+formData = decodeURIComponent(formData);
+
+while (formData.indexOf("+") != -1) {
+ formData = formData.replace("+", " ");
+}
+
+
+var formArray = formData.split("&");
+
+for (var i=0; i < formArray.length; ++i) {
+ document.writeln("<p>" + formArray[i] + "</p>");
+}
+
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+<h2>Dane jakie powinny być wprowadzone to:</h2>
+<p>Imię=Olek/Olga Nowak</p>
+<p>Email=o.nowak@poczta.pl</p>
+<p>Temat=Błąd ceny</p>
+<p>Wiadomość=Proszę o podanie aktualnej ceny sukienki Dolore.</p>
+</body>
+</html>  
